@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    #main
+    #scoreBoard
+        h3.score-title Scoreboard:
+    #chooseName
+        h3 Choose your player name:
+        input#playername(type='text' maxlength='10')
+        br
+        a#join(class='button' href='#' ) Venture Forth
+        br
+        p Use a and d to move. Enter a name and click 'Venture Forth' to enter!
+    audio(controls='', loop='' hidden='' autoplay='')
+        source(src='images/rain.mp3', type='audio/mpeg')
+        |   Your browser does not support the audio element.
